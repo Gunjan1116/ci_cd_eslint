@@ -1,7 +1,7 @@
 const app=require("express")();
 
 app.get("/",(req,res)=>{
-    console.log("Hello!!")
+    req.send("Hello!!")
 })
 
 app.listen(5001,()=>{
